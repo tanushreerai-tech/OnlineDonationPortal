@@ -1,9 +1,10 @@
 #include <iostream>
-#include "User.h"
+#include "Manager.h"
 using namespace std;
 
 int main()
 {
+    //  #pragma once WHAT IS ITS USE?
         // Creating a Person object
     // Person person1("Tanushree", "tanu@gmail.com", "9876543210");
 
@@ -25,13 +26,19 @@ int main()
 
 
 
-User user1("Yash", "yash@gmail.com", "9876543210", "USER001");
+//User user1("Yash", "yash@gmail.com", "9876543210", "USER001");
 
-cout << "\n----- USER PROFILE -----" << endl;
-user1.displayProfile();
+//cout << "\n----- USER PROFILE -----" << endl;
+//user1.displayProfile();
 
-cout << "\n----- GETTER TEST -----" << endl;
-cout << user1.getUserID() << endl;
+//cout << "\n----- GETTER TEST -----" << endl;
+//cout << user1.getUserID() << endl;
+    Manager manager1("Tanushree", "tanushree@gmail.com", "9876543210", "MAN001");
 
+    cout << "\n----- MANAGER PROFILE -----" << endl;
+    manager1.displayProfile();
+
+    cout << "\n----- GETTER TEST -----" << endl;
+    cout <<"Manager ID: " << manager1.getManagerID() << endl;    
       return 0;
 }
