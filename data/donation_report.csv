@@ -1,0 +1,3 @@
+Donation ID,Donor ID,Type,Date,Cause,Status,Amount,Payment Mode,Transaction Reference,Item Name,Quantity,Unit,Category,Condition
+"D1","USER1","MONETARY","2026-11-17","Education","Verified",1000,"UPI","TEST001",,,,,
+"D2","USER1","MATERIAL","2026-11-17","EDUCATION","Rejected",,,,"NOTEBOOKS",20,"PIECES","EDUCATION","NEW"

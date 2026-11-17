@@ -1,9 +1,11 @@
+
 #pragma once
 
 #include <iostream>
 #include <string>
 
 using namespace std;
+
 class Record
 {
 private:
@@ -13,27 +15,31 @@ private:
     string cause;
     string verificationStatus;
 
-protected:
-    // We can add carefully selected helper methods later.
-
 public:
-    // Constructors, getters and setters will go here.
-    Record(const string& donationID, const string& donorID,
-       const string& donationDate, const string& cause);
 
-       // Getters
-string getDonationID() const;
-string getDonorID() const;
-string getDonationDate() const;
-string getCause() const;
-string getVerificationStatus() const;
+    // Constructor
+    Record(
+        const string& donationID,
+        const string& donorID,
+        const string& donationDate,
+        const string& cause
+    );
 
-// Setters
-void setDonationDate(const string& donationDate);
-void setCause(const string& cause);
-void setVerificationStatus(const string& status);
+    // Getters
+    string getDonationID() const;
+    string getDonorID() const;
+    string getDonationDate() const;
+    string getCause() const;
+    string getVerificationStatus() const;
 
-virtual ~Record() = default;
+    // Setters
+    void setDonationDate(const string& donationDate);
+    void setCause(const string& cause);
+    void setVerificationStatus(const string& status);
 
-virtual string getDonationType() const = 0;
+    // Virtual destructor
+    virtual ~Record() = default;
+
+    // Pure virtual function
+    virtual string getDonationType() const = 0;
 };

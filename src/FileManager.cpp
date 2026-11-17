@@ -85,7 +85,14 @@ for (const Record* record : records)
 
 
     file.close();
-    return true;
+
+if (!file)
+{
+    cout << "Error: Failed to save donation records." << endl;
+    return false;
+}
+
+return true;
 }
 
 bool FileManager::loadDonations(vector<Record*>& records) const
